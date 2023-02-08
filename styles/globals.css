@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .linkbtn {
+    @apply px-6 py-2 text-sm uppercase tracking-widest text-gray-500;
+  }
+}
+.navbtm {
+  background: linear-gradient(
+    90deg,
+    rgb(36, 36, 36) 11%,
+    #e4ab86 60%,
+    rgb(36, 36, 36) 95%
+  );
+}
