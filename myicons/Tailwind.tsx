@@ -4,7 +4,7 @@ type Props = {};
 
 const Tailwind = (props: Props) => {
   return (
-    <svg viewBox="0 0 128 128">
+    <svg viewBox="0 0 128 128" className="myimage">
       <defs>
         <linearGradient
           id="tailwindcss-original-wordmark-a"

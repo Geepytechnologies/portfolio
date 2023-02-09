@@ -4,7 +4,7 @@ type Props = {};
 
 const Graphql = (props: Props) => {
   return (
-    <svg viewBox="0 0 128 128">
+    <svg viewBox="0 0 128 128" className="myimage">
       <g fill="#E434AA">
         <path d="M18.39 96.852l-4.6-2.657L65.04 5.434l4.597 2.656zm0 0"></path>
         <path d="M12.734 87.105H115.23v5.31H12.734zm0 0"></path>

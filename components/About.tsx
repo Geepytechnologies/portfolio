@@ -9,7 +9,7 @@ const About = (props: Props) => {
       initial={{ opacity: 0, x: -200 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
-      className="h-screen relative flex flex-col md:text-left md:flex-row max-w-7xl justify-evenly px-10 mx-auto items-center"
+      className="h-screen relative flex flex-col md:text-left max-w-7xl justify-evenly px-10 mx-auto items-center"
     >
       <h3 className="uppercase tracking-[15px] text-gray-500 text-2xl">
         About
@@ -34,7 +34,7 @@ const About = (props: Props) => {
         <p className="py-4">
           Offering my skills to the development of your company or project is
           one journey i am definitely willing to embark on. Let me bring your
-          next project to life by building irrestible mobile and web apps
+          next project to life by building irresistible mobile and web apps
           powered with innovative functionalities, sleek UI/UX Designs, REST
           APIs and product algorithms.
         </p>

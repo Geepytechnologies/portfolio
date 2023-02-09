@@ -4,7 +4,7 @@ type Props = {};
 
 const Solidity = (props: Props) => {
   return (
-    <svg viewBox="0 0 128 128">
+    <svg viewBox="0 0 128 128" className="myimage">
       <path d="M84.466 0L63.887 36.578H22.756L43.321 0z" opacity=".45"></path>
       <path d="M63.887 36.576h41.145L84.468 0H43.323z" opacity=".6"></path>
       <path

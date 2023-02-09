@@ -4,7 +4,7 @@ type Props = {};
 
 const Postgres = (props: Props) => {
   return (
-    <svg viewBox="0 0 128 128">
+    <svg viewBox="0 0 128 128" className="myimage">
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"

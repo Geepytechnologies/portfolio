@@ -1,6 +1,7 @@
 import React from "react";
 import { FaAward } from "react-icons/fa";
 import { AiFillEye } from "react-icons/ai";
+import Link from "next/link";
 
 type Props = {};
 
@@ -13,31 +14,29 @@ const Projects = (props: Props) => {
       <div>
         <div>
           <div className="flex flex-row gap-2">
-            <FaAward
-              size={"5em"}
-              style={{ fontSize: 5 }}
-              className="text-[8px]"
-            />
+            <FaAward style={{ fontSize: 22 }} className="" />
             <h3>Web</h3>
           </div>
-          <h2>XYZ Academy</h2>
+          <h2 className="font-[600]">XYZ Academy</h2>
           <div>
             <img
               src="/gp1.JPG"
               alt=""
-              className="w-[400px] h-[250px] object cover cursor-pointer"
+              className="w-[400px] h-[250px] border-white border-l-2 object cover cursor-pointer"
             />
           </div>
-          <div className="flex flex-row items-start justify-start">
-            <h2 className="bg-[red] p-2 rounded-lg">React</h2>
-            <h2>Node JS</h2>
-            <h2>MongoDB</h2>
+          <div className="flex text-[#e4ab86] flex-row items-start justify-start">
+            <h2 className="">React /&nbsp;</h2>
+            <h2>Node JS /&nbsp;</h2>
+            <h2>MongoDB </h2>
           </div>
           <p>A youtube clone</p>
-          <div className="flex flex-row gap-2 items-center cursor-pointer justify-start w-[50%] p-2 rounded-lg border border-white">
-            <AiFillEye className="text-[20px]" />
-            preview
-          </div>
+          <Link href="">
+            <div className="flex font-[600] text-[#4faa41] flex-row gap-2 items-center cursor-pointer justify-start w-[40%] p-2 rounded-lg border border-[#4faa41]">
+              <AiFillEye className="text-[20px]" />
+              Preview
+            </div>
+          </Link>
         </div>
       </div>
     </div>
