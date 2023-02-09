@@ -5,3 +5,5 @@ type Props = {};
 const Cinematicview = (props: Props) => {
   return <div>Cinematicview</div>;
 };
+
+export default Cinematicview;
