@@ -17,7 +17,7 @@ const Projects = (props: Props) => {
             <FaAward style={{ fontSize: 22 }} className="" />
             <h3>Web</h3>
           </div>
-          <h2 className="font-[600]">XYZ Academy</h2>
+          <h2 className="font-[600] text-left">XYZ Academy</h2>
           <div>
             <img
               src="/gp1.JPG"

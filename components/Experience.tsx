@@ -10,9 +10,9 @@ const Experience = (props: Props) => {
       //   initial={{ opacity: 0, x: 200 }}
       //   whileInView={{ opacity: 1, x: 0 }}
       //   transition={{ duration: 0.5 }}
-      className=" flex flex-col relative text-left  max-w-full px-10 justify-evenly items-center pt-6 mx-auto"
+      className=" flex flex-col relative text-left  max-w-full px-3 md:px-10 justify-evenly items-center pt-6 mx-auto"
     >
-      <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="uppercase px-2 text-center tracking-[20px] text-gray-500 text-2xl">
         Experience
       </h3>
       <div className="w-full space-x-5 flex overflow-x-scroll p-10">

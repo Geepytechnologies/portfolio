@@ -21,17 +21,17 @@ const Contact = (props: Props) => {
     formState: { errors },
   } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    window.location.href = `emailto:geepytechnologies@gmail.com?subject=${data.subject}&body=Hi,my name is ${data.name}, ${data.message}`;
+    window.location.href = `mailto:geepytechnologies@gmail.com?subject=${data.subject}&body=Hi,my name is ${data.name}, ${data.message}`;
   };
   return (
     <div className="h-screen relative flex flex-col text-center md:text-left max-w-full justify-evenly px-10 mx-auto items-center">
       <h3 className="uppercase tracking-[15px] text-gray-500 text-2xl">
         Contact Me
       </h3>
-      <div className="space-y-2">
-        <p className="text-[23px] font-[600]">
-          I have got just what you need. Let&apos;s talk
-        </p>
+      <p className="text-[23px] font-[600]">
+        I have got just what you need. Let&apos;s talk
+      </p>
+      <div className="space-y-4 text-[18px]">
         <p className="flex gap-1 items-center">
           <BsFillTelephoneFill /> +2348106974201
         </p>
@@ -42,9 +42,9 @@ const Contact = (props: Props) => {
       </div>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col space-y-2 w-fit mx-auto"
+        className="flex flex-col space-y-2 w-full  mx-auto"
       >
-        <div className="flex space-x-2">
+        <div className="flex flex-col md:flex-row gap-2 md:gap-0">
           <input
             {...register("name")}
             placeholder="Name"
@@ -70,7 +70,7 @@ const Contact = (props: Props) => {
         />
         <button
           type="submit"
-          className="bg-[#ac8063] text-[20px] font-[600] rounded-sm py-3"
+          className="bg-[#ac8063] mt-2 text-[20px] font-[600] rounded-sm py-3"
         >
           Submit
         </button>
