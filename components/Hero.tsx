@@ -22,7 +22,7 @@ const Hero = (props: Props) => {
           <Cursor cursorColor="#dfcdc7" />
         </h1>
       </div>
-      <div className="flex flex-row items-center justify-center px-5 ">
+      <div className="flex flex-row w-full gap-2  items-center justify-center  ">
         <Link className="linkbtn" href={"#about"}>
           About
         </Link>

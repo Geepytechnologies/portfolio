@@ -42,9 +42,9 @@ const Contact = (props: Props) => {
       </div>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col space-y-2 w-full  mx-auto"
+        className="flex flex-col space-y-2 w-full md:w-[70%]  mx-auto"
       >
-        <div className="flex flex-col md:flex-row gap-2 md:gap-0">
+        <div className="flex flex-col md:flex-row gap-2">
           <input
             {...register("name")}
             placeholder="Name"

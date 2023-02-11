@@ -4,7 +4,7 @@
 
 @layer components {
   .linkbtn {
-    @apply px-6 py-2 text-sm uppercase tracking-widest text-gray-500;
+    @apply text-sm uppercase tracking-widest text-gray-500;
   }
 }
 .contact {

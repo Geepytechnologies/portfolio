@@ -4,6 +4,31 @@ import Card from "./Card";
 
 type Props = {};
 
+const experience = [
+  {
+    title: "Frontend Developer",
+    company: "Vicmie Inc",
+    src: "/vicmie.png",
+    date: "from 2021 - 2022",
+    description: "Built responsive websites with modern technologies",
+  },
+  {
+    title: "Smart Contract Developer Intern",
+    company: "Communiti",
+    src: "/communiti.png",
+    date: "2022 - present",
+    description: "Skill upgrade",
+  },
+  {
+    title: "Full stack Developer",
+    company: "SignaCode Solutions",
+    src: "/communiti.png",
+    date: "2022",
+    description:
+      "Building and maintaining end-to-end web applications and services, utilizing expertise in both front-end and back-end development.",
+  },
+];
+
 const Experience = (props: Props) => {
   return (
     <motion.div
@@ -16,10 +41,16 @@ const Experience = (props: Props) => {
         Experience
       </h3>
       <div className="w-full space-x-5 flex overflow-x-scroll p-10">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {experience.map((item, index) => (
+          <Card
+            key={index}
+            title={item.title}
+            company={item.company}
+            src={item.src}
+            date={item.date}
+            description={item.description}
+          />
+        ))}
       </div>
     </motion.div>
   );
