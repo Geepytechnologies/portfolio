@@ -44,7 +44,7 @@ const Projects = (props: Props) => {
             about the financial market. With expert instructors and a dynamic
             curriculum, the academy offers in-depth courses and resources to
             help individuals gain a deeper understanding of the financial world.
-            Whether you're a seasoned investor or just starting out, XYZ Academy
+            Whether you&apos;re a seasoned investor or just starting out, XYZ Academy
             provides the tools and knowledge necessary to navigate the complex
             world of finance. From stocks and bonds to economics and financial
             analysis
