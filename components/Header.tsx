@@ -5,6 +5,7 @@ import { HiMenuAlt4 } from "react-icons/hi";
 import { AiFillContacts, AiOutlineClose } from "react-icons/ai";
 import { BsCloudDownload } from "react-icons/bs";
 import { FaBlog, FaProjectDiagram, FaUserAlt } from "react-icons/fa";
+import Link from "next/link";
 
 type Props = {};
 
@@ -91,18 +92,27 @@ const Header = (props: Props) => {
           }`}
         >
           <div className="space-y-3">
-            <div className="flex gap-1 items-center justify-center">
+            <Link
+              href="#about"
+              className="flex gap-1 items-center justify-center"
+            >
               <FaUserAlt />
               <p>About</p>
-            </div>
-            <div className="flex gap-1 items-center justify-center">
+            </Link>
+            <Link
+              href="#projects"
+              className="flex gap-1 items-center justify-center"
+            >
               <FaProjectDiagram />
               <p>Projects</p>
-            </div>
-            <div className="flex gap-1 items-center justify-center">
+            </Link>
+            <Link
+              href="#contact"
+              className="flex gap-1 items-center justify-center"
+            >
               <AiFillContacts />
               <p>Contact</p>
-            </div>
+            </Link>
             <div className="flex gap-1 items-center justify-center">
               <FaBlog />
               <p>Blog</p>

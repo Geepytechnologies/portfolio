@@ -7,12 +7,12 @@ type Props = {};
 
 const Projects = (props: Props) => {
   return (
-    <div className="min-h-screen relative flex flex-col text-center md:text-left max-w-full justify-evenly px-10 mx-auto items-center">
+    <div className="min-h-screen  relative flex flex-col text-center md:text-left max-w-full justify-evenly  items-center">
       <h3 className="uppercase tracking-[15px] text-gray-500 text-2xl">
         Projects
       </h3>
       <div className="py-3 items-center justify-center flex flex-col w-full md:w-[60%]">
-        <div className=" py-3 space-y-2 max-w-[400px]">
+        <div className=" py-3 space-y-2 w-[350px] md:w-[400px]">
           <div className="flex items-center flex-row gap-1">
             <FaAward style={{ fontSize: 20 }} className="text-[#f08800]" />
             <h3 className="text-[#f08800] tracking-[10px] uppercase">Web</h3>
@@ -22,7 +22,7 @@ const Projects = (props: Props) => {
             <img
               src="/xyz.png"
               alt=""
-              className="max-w-[400px] max-h-[250px] h-auto w-auto  rounded-r-lg  border-2  cursor-pointer"
+              className="max-w-[350px] max-h-[200px] md:max-w-[400px] md:max-h-[250px] h-auto w-auto  rounded-r-lg  border-2  cursor-pointer"
             />
           </div>
           <div className="flex text-[#e4ab86] gap-3 mt-2 flex-row items-start justify-start">
@@ -44,20 +44,16 @@ const Projects = (props: Props) => {
             about the financial market. With expert instructors and a dynamic
             curriculum, the academy offers in-depth courses and resources to
             help individuals gain a deeper understanding of the financial world.
-            Whether you're a seasoned investor or just starting out, XYZ Academy
-            provides the tools and knowledge necessary to navigate the complex
-            world of finance. From stocks and bonds to economics and financial
-            analysis
           </p>
-          <Link href="">
-            <div className="flex m-2 font-[600]  flex-row gap-2 items-center cursor-pointer justify-start w-[100px] p-2 rounded-lg text-[#f08800] border border-[#f08800]">
+          <Link href="https://xyzacademy.com.ng">
+            <div className="flex my-2 font-[600]  flex-row gap-2 items-center cursor-pointer justify-start w-[100px] p-2 rounded-lg text-[#f08800] border border-[#f08800]">
               <AiFillEye className="text-[20px]" />
               Preview
             </div>
           </Link>
         </div>
 
-        <div className="py-3 space-y-2 max-w-[400px]">
+        <div className="py-3 space-y-2 w-[350px] md:w-[400px]">
           <div className="flex items-center flex-row gap-1">
             <FaAward style={{ fontSize: 20 }} className="text-[#d41e43]" />
             <h3 className="text-[#d41e43] tracking-[10px] uppercase">Web3</h3>
@@ -67,7 +63,7 @@ const Projects = (props: Props) => {
             <img
               src="/nfthub.png"
               alt=""
-              className="max-w-[400px] max-h-[250px] h-auto w-auto border-[#17437a] border-2 shadow-2xl rounded-r-lg cursor-pointer"
+              className="max-w-[350px] max-h-[200px] md:max-w-[400px] md:max-h-[250px] h-auto w-auto border-[#17437a] border-2 shadow-2xl rounded-r-lg cursor-pointer"
             />
           </div>
           <div className="flex text-[#e4ab86] gap-3 mt-2 flex-row items-start justify-start">
@@ -88,22 +84,16 @@ const Projects = (props: Props) => {
             NFT Hub is a cutting-edge NFT (Non-Fungible Token) explorer website
             built by utilizing the power of Solidity programming language. The
             platform allows users to seamlessly explore and discover unique NFTs
-            on the Ethereum blockchain. The smart contract written in Solidity
-            ensures secure and transparent NFT transactions, providing users
-            with a reliable and trustworthy platform to buy, sell, and collect
-            unique digital assets. NFT Hub stands out as a comprehensive
-            solution for NFT enthusiasts, offering them an all-in-one platform
-            to stay up-to-date with the latest developments in the NFT world.
-            Showcase your portfolio and unique digital assets on NFT Hub today!
+            on the Ethereum blockchain.
           </p>
-          <Link href="">
-            <div className="flex m-2 font-[600]  flex-row gap-2 items-center cursor-pointer justify-start w-[100px] p-2 rounded-lg border  text-[#d41e43] border-[#d41e43]">
+          <Link href="https://nfthub-eight.vercel.app">
+            <div className="flex my-2 font-[600]  flex-row gap-2 items-center cursor-pointer justify-start w-[100px] p-2 rounded-lg border  text-[#d41e43] border-[#d41e43]">
               <AiFillEye className="text-[20px]" />
               Preview
             </div>
           </Link>
         </div>
-        <div className=" py-3 space-y-2 max-w-[400px]">
+        <div className=" py-3 space-y-2 w-[350px] md:w-[400px]">
           <div className="flex items-center flex-row gap-1">
             <FaAward style={{ fontSize: 20 }} className="text-[#019f52]" />
             <h3 className="text-[#019f52] tracking-[10px] uppercase">Web</h3>
@@ -113,7 +103,7 @@ const Projects = (props: Props) => {
             <img
               src="/pizza.png"
               alt=""
-              className="max-w-[400px] max-h-[250px] h-auto w-auto border-[white] border-2 shadow-2xl rounded-r-lg cursor-pointer"
+              className="max-w-[350px] max-h-[200px] md:max-w-[400px] md:max-h-[250px] h-auto w-auto border-[white] border-2 shadow-2xl rounded-r-lg cursor-pointer"
             />
           </div>
           <div className="flex text-[#e4ab86] gap-3 mt-2 flex-row items-start justify-start">
@@ -134,12 +124,10 @@ const Projects = (props: Props) => {
             PizzaHub is a user-friendly online platform for ordering delicious
             pizzas from your favorite local pizzerias. The website offers a wide
             range of menu options and allows customers to easily place orders
-            and track delivery status. With a simple and intuitive interface,
-            PizzaHub streamlines the ordering process and provides a convenient
-            and enjoyable experience for pizza lovers everywhere.
+            and track delivery status.
           </p>
-          <Link href="">
-            <div className=" flex m-2 font-[600]  flex-row gap-2 items-center cursor-pointer justify-start w-[100px] p-2 rounded-lg border  text-[#019f52] border-[#019f52]">
+          <Link href="https://pizzahubafrica.vercel.app">
+            <div className=" flex my-2 font-[600]  flex-row gap-2 items-center cursor-pointer justify-start w-[100px] p-2 rounded-lg border  text-[#019f52] border-[#019f52]">
               <AiFillEye className="text-[20px]" />
               Preview
             </div>

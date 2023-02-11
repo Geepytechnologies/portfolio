@@ -26,12 +26,12 @@ const Card = (props: Props) => {
         <p className="font-bold text-2xl mt-1">{props.title}</p>
         <div className="flex space-x-2 my-2">{props.description}</div>
         <p className="uppercase py-5 text-gray-500">{props.date}</p>
-        <ul className="list-disc ml-5 text-lg">
+        {/* <ul className="list-disc ml-5 text-lg">
           <li>hello</li>
           <li>hello</li>
           <li>hello</li>
           <li>hello</li>
-        </ul>
+        </ul> */}
       </div>
     </article>
   );

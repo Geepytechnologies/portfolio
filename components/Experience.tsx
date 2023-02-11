@@ -22,7 +22,15 @@ const experience = [
   {
     title: "Full stack Developer",
     company: "SignaCode Solutions",
-    src: "/communiti.png",
+    src: "/signacode.png",
+    date: "2021",
+    description:
+      "Building and maintaining end-to-end web applications and services, utilizing expertise in both front-end and back-end development.",
+  },
+  {
+    title: "Full stack Developer",
+    company: "DevGratify",
+    src: "/gratify.jpeg",
     date: "2022",
     description:
       "Building and maintaining end-to-end web applications and services, utilizing expertise in both front-end and back-end development.",
