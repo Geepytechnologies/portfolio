@@ -7,7 +7,7 @@ type Props = {};
 const Hero = (props: Props) => {
   const [text, count] = useTypewriter({
     words: [
-      "Hi, my name is Godspower",
+      "Hi, I'm Godspower",
       "Full Stack developer",
       "Blockchain Developer",
     ],
@@ -22,7 +22,7 @@ const Hero = (props: Props) => {
           Software Engineer
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10">
-          <span className="mr-3">{text}</span>
+          <span className="">{text}</span>
           <Cursor cursorColor="#dfcdc7" />
         </h1>
       </div>
