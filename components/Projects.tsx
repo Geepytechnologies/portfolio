@@ -2,6 +2,7 @@ import React from "react";
 import { FaAward } from "react-icons/fa";
 import { AiFillEye } from "react-icons/ai";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -11,7 +12,20 @@ const Projects = (props: Props) => {
       <h3 className="uppercase tracking-[15px] text-gray-500 text-2xl">
         Projects
       </h3>
-      <div className="py-3 items-center justify-center flex flex-col w-full md:w-[60%]">
+      <motion.div
+        initial={{
+          opacity: 0,
+          scale: 0.5,
+        }}
+        whileInView={{
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.2,
+        }}
+        className="py-3 justify-items-center grid grid-cols-1 md:grid-cols-2 gap-5 w-full "
+      >
         <div className=" py-3 space-y-2 w-[350px] md:w-[400px]">
           <div className="flex items-center flex-row gap-1">
             <FaAward style={{ fontSize: 20 }} className="text-[#f08800]" />
@@ -30,13 +44,13 @@ const Projects = (props: Props) => {
               <div className="rounded-full h-[30px] flex items-center justify-center w-[30px] bg-white">
                 <i className="devicon-nextjs-original-wordmark font-[600] colored"></i>
               </div>
-              <h2 className="text-white">Next JS</h2>
+              <h2 className="text-white">NextJS</h2>
             </div>
             <div className="flex flex-col">
               <div className="rounded-full h-[30px] flex items-center justify-center w-[30px] bg-[white]">
                 <i className="devicon-mongodb-plain colored"></i>
               </div>
-              <h2 className="text-white">Mongo DB</h2>
+              <h2 className="text-white">MongoDB</h2>
             </div>
           </div>
           <p className="text-gray-300 text-left">
@@ -63,7 +77,7 @@ const Projects = (props: Props) => {
             <img
               src="/nfthub.png"
               alt=""
-              className="max-w-[350px] max-h-[200px] md:max-w-[400px] md:max-h-[250px] h-auto w-auto border-[#17437a] border-2 shadow-2xl rounded-r-lg cursor-pointer"
+              className="max-w-[350px] max-h-[200px] md:max-w-[400px] md:max-h-[250px] h-auto w-auto border-[#17437a] border-2 rounded-r-lg cursor-pointer"
             />
           </div>
           <div className="flex text-[#e4ab86] gap-3 mt-2 flex-row items-start justify-start">
@@ -71,7 +85,7 @@ const Projects = (props: Props) => {
               <div className="rounded-full h-[30px] flex items-center justify-center w-[30px] bg-white">
                 <i className="devicon-nextjs-original-wordmark font-[600] colored"></i>
               </div>
-              <h2 className="text-white">Next JS</h2>
+              <h2 className="text-white">NextJS</h2>
             </div>
             <div className="flex flex-col">
               <div className="rounded-full h-[30px] flex items-center justify-center w-[30px] bg-[white]">
@@ -103,7 +117,7 @@ const Projects = (props: Props) => {
             <img
               src="/pizza.png"
               alt=""
-              className="max-w-[350px] max-h-[200px] md:max-w-[400px] md:max-h-[250px] h-auto w-auto border-[white] border-2 shadow-2xl rounded-r-lg cursor-pointer"
+              className="max-w-[350px] max-h-[200px] md:max-w-[400px] md:max-h-[250px] h-auto w-auto border-[white] border-2  rounded-r-lg cursor-pointer"
             />
           </div>
           <div className="flex text-[#e4ab86] gap-3 mt-2 flex-row items-start justify-start">
@@ -111,13 +125,13 @@ const Projects = (props: Props) => {
               <div className="rounded-full h-[30px] flex items-center justify-center w-[30px] bg-white">
                 <i className="devicon-nextjs-original-wordmark font-[600] colored"></i>
               </div>
-              <h2 className="text-white">Next JS</h2>
+              <h2 className="text-white">NextJS</h2>
             </div>
             <div className="flex flex-col">
               <div className="rounded-full h-[30px] flex items-center justify-center w-[30px] bg-[white]">
                 <i className="devicon-mongodb-plain colored"></i>
               </div>
-              <h2 className="text-white">Mongo DB</h2>
+              <h2 className="text-white">MongoDB</h2>
             </div>
           </div>
           <p className="text-gray-300 text-left">
@@ -133,7 +147,60 @@ const Projects = (props: Props) => {
             </div>
           </Link>
         </div>
-      </div>
+        <div className=" py-3 space-y-2 w-[350px] md:w-[400px]">
+          <div className="flex items-center flex-row gap-1">
+            <FaAward style={{ fontSize: 20 }} className="text-[#ef1e41]" />
+            <h3 className="text-[#ef1e41] tracking-[10px] uppercase">Web</h3>
+          </div>
+          <h2 className="font-[600] tracking-wider text-left">Reveal</h2>
+          <div>
+            <img
+              src="/reveal.png"
+              alt=""
+              className="max-w-[350px] max-h-[200px] md:max-w-[400px] md:max-h-[250px] h-auto w-auto border-[white] border rounded-r-lg cursor-pointer"
+            />
+          </div>
+          <div className="flex text-[#e4ab86] gap-3 mt-2 flex-row items-start justify-start">
+            <div className="flex flex-col">
+              <div className="rounded-full h-[30px] flex items-center justify-center w-[30px] bg-white">
+                <i className="devicon-react-original colored"></i>
+              </div>
+              <h2 className="text-white">React</h2>
+            </div>
+            <div className="flex flex-col">
+              <div className="rounded-full h-[30px] flex items-center justify-center w-[30px] bg-[white]">
+                <i className="devicon-mongodb-plain colored"></i>
+              </div>
+              <h2 className="text-white">MongoDB</h2>
+            </div>
+            <div className="flex flex-col">
+              <div className="rounded-full h-[30px] flex items-center justify-center w-[30px] bg-[white]">
+                <i className="devicon-nodejs-plain colored"></i>
+              </div>
+              <h2 className="text-white">NodeJS</h2>
+            </div>
+            <div className="flex flex-col">
+              <div className="rounded-full h-[30px] flex items-center justify-center w-[30px] bg-[white]">
+                <i className="devicon-firebase-plain colored"></i>
+              </div>
+              <h2 className="text-white">Firebase</h2>
+            </div>
+          </div>
+          <p className="text-gray-300 text-left">
+            Reveal is a cutting-edge video streaming platform designed
+            specifically for developers to showcase their video projects. This
+            platform offers a dynamic and interactive space where developers can
+            share their creations with the world and get valuable feedback from
+            peers.
+          </p>
+          <Link href="https://reveal.com.ng">
+            <div className=" flex my-2 font-[600]  flex-row gap-2 items-center cursor-pointer justify-start w-[100px] p-2 rounded-lg border  text-[#ef1e41] border-[#ef1e41]">
+              <AiFillEye className="text-[20px]" />
+              Preview
+            </div>
+          </Link>
+        </div>
+      </motion.div>
     </div>
   );
 };

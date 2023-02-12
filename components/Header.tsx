@@ -56,13 +56,26 @@ const Header = (props: Props) => {
             <li>Contact</li>
             <li>Blog</li>
           </ul>
-          <a
+          <motion.a
+            initial={{
+              x: 500,
+              opacity: 0,
+              scale: 0.5,
+            }}
+            animate={{
+              x: 0,
+              opacity: 1,
+              scale: 1,
+            }}
+            transition={{
+              duration: 1.5,
+            }}
             href="/Godspower.pdf"
             download
             className="flex-row cursor-pointer hidden md:flex gap-2 font-[600] px-4 items-center text-[#e4ab86] rounded-md  border-2 border-[#e4ab86]"
           >
             <BsCloudDownload /> Resume
-          </a>
+          </motion.a>
           <motion.div
             initial={{
               x: 500,
@@ -91,7 +104,7 @@ const Header = (props: Props) => {
               : "max-h-[0px] overflow-hidden h-[200px]   transition-[max-height] duration-500 ease-in-out"
           }`}
         >
-          <div className="space-y-3">
+          <div className="space-y-3 text-white">
             <Link
               href="#about"
               className="flex gap-1 items-center justify-center"

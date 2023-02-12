@@ -15,15 +15,15 @@ const experience = [
   {
     title: "Smart Contract Developer Intern",
     company: "Communiti",
-    src: "/communiti.png",
+    src: "/communi.png",
     date: "2022 - present",
     description: "Skill upgrade",
   },
   {
     title: "Full stack Developer",
     company: "SignaCode Solutions",
-    src: "/signacode.png",
-    date: "2021",
+    src: "/signa.png",
+    date: "2019",
     description:
       "Building and maintaining end-to-end web applications and services, utilizing expertise in both front-end and back-end development.",
   },
@@ -33,7 +33,7 @@ const experience = [
     src: "/gratify.jpeg",
     date: "2022",
     description:
-      "Building and maintaining end-to-end web applications and services, utilizing expertise in both front-end and back-end development.",
+      "Designing, implementing, and testing dynamic and scalable web solutions",
   },
 ];
 
@@ -43,12 +43,12 @@ const Experience = (props: Props) => {
       //   initial={{ opacity: 0, x: 200 }}
       //   whileInView={{ opacity: 1, x: 0 }}
       //   transition={{ duration: 0.5 }}
-      className=" flex flex-col relative text-left  max-w-full px-3 md:px-10 justify-evenly items-center pt-6 mx-auto"
+      className=" flex flex-col relative text-left  max-w-full px-3 md:px-10 justify-evenly items-center pt-6 mx-auto "
     >
       <h3 className="uppercase px-2 text-center tracking-[20px] text-gray-500 text-2xl">
         Experience
       </h3>
-      <div className="w-full space-x-5 flex overflow-x-scroll p-10">
+      <div className="w-full space-x-5 flex overflow-x-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#e4ab86] p-10">
         {experience.map((item, index) => (
           <Card
             key={index}

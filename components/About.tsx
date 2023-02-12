@@ -14,8 +14,8 @@ const About = (props: Props) => {
       <h3 className="uppercase tracking-[15px] text-gray-500 text-2xl">
         About
       </h3>
-      <div className="text-base">
-        <p className="py-4">
+      <div className="text-base font-mont">
+        <p className="py-4 font-rob">
           I&apos;m a fullstack developer focused on solving real-life challenges
           by leveraging on the power of software development.
         </p>

@@ -31,7 +31,18 @@ const Skills = (props: Props) => {
       <h3 className="uppercase tracking-[15px] text-gray-500 text-2xl">
         Skills
       </h3>
-      <div
+      <motion.div
+        initial={{
+          opacity: 0,
+          scale: 0.5,
+        }}
+        whileInView={{
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.2,
+        }}
         className={` grid grid-cols-4 justify-center items-center mt-[20px] p-3  gap-6`}
       >
         <Html />
@@ -54,7 +65,7 @@ const Skills = (props: Props) => {
         <Mysql />
         <Git />
         <Firebase />
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
