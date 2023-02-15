@@ -49,12 +49,25 @@ const Header = (props: Props) => {
               fgColor="gray"
               bgColor="transparent"
             />
+            <SocialIcon
+              url="https://github.com/Geepytechnologies"
+              fgColor="gray"
+              bgColor="transparent"
+            />
           </motion.div>
           <ul className="text-gray-300 hidden  md:flex gap-9 text-[20px] items-center justify-center">
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-            <li>Blog</li>
+            <li>
+              <Link href="#about">About</Link>
+            </li>
+            <li>
+              <Link href="#projects">Projects</Link>
+            </li>
+            <li>
+              <Link href="#contact">Contact</Link>
+            </li>
+            <li>
+              <Link href="">Blog</Link>
+            </li>
           </ul>
           <motion.a
             initial={{
@@ -72,7 +85,7 @@ const Header = (props: Props) => {
             }}
             href="/Godspower.pdf"
             download
-            className="flex-row cursor-pointer hidden md:flex gap-2 font-[600] px-4 items-center text-[#e4ab86] rounded-md  border-2 border-[#e4ab86]"
+            className="flex-row cursor-pointer hidden md:flex gap-2 font-[600] px-4 items-center text-[#e4ab86] mr-4 rounded-md  border-2 border-[#e4ab86]"
           >
             <BsCloudDownload /> Resume
           </motion.a>

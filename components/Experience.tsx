@@ -17,7 +17,7 @@ const experience = [
     company: "Communiti",
     src: "/communi.png",
     date: "2022 - present",
-    description: "Skill upgrade",
+    description: "Writing, testing, and deploying smart contracts",
   },
   {
     title: "Full stack Developer",

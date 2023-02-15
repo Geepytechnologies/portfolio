@@ -24,7 +24,7 @@ const Contact = (props: Props) => {
     window.location.href = `mailto:geepytechnologies@gmail.com?subject=${data.subject}&body=Hi,my name is ${data.name}, ${data.message}`;
   };
   return (
-    <div className="h-screen relative flex flex-col text-center md:text-left max-w-full justify-evenly px-10 mx-auto items-center">
+    <div className=" relative flex flex-col space-y-3 text-center md:text-left max-w-full justify-evenly px-10 py-10 items-center">
       <h3 className="uppercase tracking-[15px] text-gray-500 text-2xl">
         Contact Me
       </h3>
@@ -44,17 +44,17 @@ const Contact = (props: Props) => {
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col space-y-2 w-full md:w-[70%]  mx-auto"
       >
-        <div className="flex flex-col md:flex-row gap-2">
+        <div className="flex flex-col md:flex-row w-full gap-2">
           <input
             {...register("name")}
             placeholder="Name"
-            className="contact"
+            className="contact md:w-[50%]"
             type="text"
           />
           <input
             {...register("email")}
             placeholder="Email"
-            className="contact"
+            className="contact md:w-[50%]"
             type="email"
           />
         </div>
