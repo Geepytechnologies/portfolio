@@ -37,7 +37,7 @@ const Contact = (props: Props) => {
         </p>
         <p className="flex gap-1 items-center">
           <AiOutlineMail />
-          geepytechologies@gmail.com
+          geepytechnologies@gmail.com
         </p>
       </div>
       <form
