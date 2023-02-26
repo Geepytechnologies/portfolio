@@ -15,8 +15,8 @@ const Tailwind = (props: Props) => {
           y2="511.596"
           gradientTransform="matrix(27.16757 5.6391 -9.3985 16.30055 4747.487 -8290.643)"
         >
-          <stop offset="0" stop-color="#2298bd"></stop>
-          <stop offset="1" stop-color="#0ed7b5"></stop>
+          <stop offset="0" stopColor="#2298bd"></stop>
+          <stop offset="1" stopColor="#0ed7b5"></stop>
         </linearGradient>
       </defs>
       <path
