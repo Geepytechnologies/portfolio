@@ -193,7 +193,7 @@ const Projects = (props: Props) => {
             share their creations with the world and get valuable feedback from
             peers.
           </p>
-          <Link href="https://reveal.com.ng">
+          <Link href="https://reveal-server-production.up.railway.app">
             <div className=" flex my-2 font-[600]  flex-row gap-2 items-center cursor-pointer justify-start w-[100px] p-2 rounded-lg border  text-[#ef1e41] border-[#ef1e41]">
               <AiFillEye className="text-[20px]" />
               Preview
