@@ -32,8 +32,8 @@ const Projectcard = (props: Props) => {
         Pam is a meme token project created for fun and entertainment, with no
         financial return expectation. The project was built using React, a
         JavaScript library for building user interfaces. The project showcases
-        the developer's technical skills and creativity in a fun and playful
-        way.
+        the developer&apos;s technical skills and creativity in a fun and
+        playful way.
       </p>
       <Link href="https://pamtoken.io">
         <div className=" flex my-2 font-[600]  flex-row gap-2 items-center cursor-pointer justify-start w-[100px] p-2 rounded-lg border  text-[#6b9c2f] border-[#6b9c2f]">
