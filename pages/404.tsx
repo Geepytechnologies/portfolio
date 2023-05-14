@@ -17,6 +17,7 @@ const Index = (props: Props) => {
             Home
           </Link>
         </h2>
+        <img src="/box.svg" alt="test" id="box" />
       </div>
     </Layout>
   );

@@ -3,6 +3,7 @@ import { FaAward } from "react-icons/fa";
 import { AiFillEye } from "react-icons/ai";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Projectcard from "./Projectcard";
 
 type Props = {};
 
@@ -200,6 +201,7 @@ const Projects = (props: Props) => {
             </div>
           </Link>
         </div>
+        {/* election */}
         <div className=" py-3 space-y-2 w-[350px] md:w-[400px]">
           <div className="flex items-center flex-row gap-1">
             <FaAward style={{ fontSize: 20 }} className="text-[#01945a]" />
@@ -242,6 +244,8 @@ const Projects = (props: Props) => {
             </div>
           </Link>
         </div>
+        {/* pamtoken */}
+        <Projectcard />
       </motion.div>
     </div>
   );
