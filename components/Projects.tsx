@@ -185,7 +185,7 @@ const Projects = (props: Props) => {
           description={
             "Portfolio and blog website for digital content creation. Powered by Hygraph as a CMS. Built with the fast blazing technology of NextJS"
           }
-          projectlink={"htps://dcryptgirl.net"}
+          projectlink={"htps://debby.vercel.app"}
           tools={[
             {
               icon: "devicon-nextjs-original-wordmark font-[600] colored",
