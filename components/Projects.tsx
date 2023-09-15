@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 type Props = {};
 
-const Projects = (props: Props) => {
+const Projects: React.FC = (props: Props) => {
   return (
     <div className="min-h-screen  relative flex flex-col text-center md:text-left max-w-full justify-evenly  items-center">
       <h3 className="uppercase tracking-[15px] text-gray-500 text-2xl">
@@ -26,33 +26,17 @@ const Projects = (props: Props) => {
         }}
         className="py-3 justify-items-center grid grid-cols-1 md:grid-cols-2 gap-5 w-full "
       >
-        <div className=" py-3 space-y-2 w-[350px] md:w-[400px]">
-          <div className="flex items-center flex-row gap-1">
-            <FaAward style={{ fontSize: 20 }} className="text-[#f08800]" />
-            <h3 className="text-[#f08800] tracking-[10px] uppercase">Web</h3>
-          </div>
-          <h2 className="font-[600] tracking-wider text-left">Xyz Academy</h2>
+        <div className=" space-y-2 bg-[rgb(45,45,45)] drop-shadow-md border border-white w-[350px] md:w-[400px]">
           <div>
             <img
               src="/xyz.png"
               alt=""
-              className="max-w-[350px] max-h-[200px] md:max-w-[400px] md:max-h-[250px] h-auto w-auto  rounded-r-lg  border-2  cursor-pointer"
+              className=" max-h-[250px]  md:max-h-[300px] h-auto w-full cursor-pointer"
             />
           </div>
-          <div className="flex text-[#e4ab86] gap-3 mt-2 flex-row items-start justify-start">
-            <div className="flex flex-col">
-              <div className="rounded-full h-[30px] flex items-center justify-center w-[30px] bg-white">
-                <i className="devicon-nextjs-original-wordmark font-[600] colored"></i>
-              </div>
-              <h2 className="text-white">NextJS</h2>
-            </div>
-            <div className="flex flex-col">
-              <div className="rounded-full h-[30px] flex items-center justify-center w-[30px] bg-[white]">
-                <i className="devicon-mongodb-plain colored"></i>
-              </div>
-              <h2 className="text-white">MongoDB</h2>
-            </div>
-          </div>
+          <h2 className="font-[500] font-mont tracking-wider text-left">
+            XYZ Academy
+          </h2>
           <p className="text-gray-300 text-left">
             XYZ Academy is a comprehensive platform for education and learning
             about the financial market. With expert instructors and a dynamic
@@ -193,8 +177,50 @@ const Projects = (props: Props) => {
             share their creations with the world and get valuable feedback from
             peers.
           </p>
-          <Link href="https://reveal.com.ng">
+          <Link href="https://comfortable-mite-underwear.cyclic.app">
             <div className=" flex my-2 font-[600]  flex-row gap-2 items-center cursor-pointer justify-start w-[100px] p-2 rounded-lg border  text-[#ef1e41] border-[#ef1e41]">
+              <AiFillEye className="text-[20px]" />
+              Preview
+            </div>
+          </Link>
+        </div>
+        <div className=" py-3 space-y-2 w-[350px] md:w-[400px]">
+          <div className="flex items-center flex-row gap-1">
+            <FaAward style={{ fontSize: 20 }} className="text-[#01945a]" />
+            <h3 className="text-[#01945a] tracking-[10px] uppercase">Web3</h3>
+          </div>
+          <h2 className="font-[600] tracking-wider text-left">
+            Nigerian Election
+          </h2>
+          <div>
+            <img
+              src="/election.png"
+              alt=""
+              className="max-w-[350px] max-h-[200px] md:max-w-[400px] md:max-h-[250px] h-auto w-auto border-[white] border rounded-r-lg cursor-pointer"
+            />
+          </div>
+          <div className="flex text-[#e4ab86] gap-3 mt-2 flex-row items-start justify-start">
+            <div className="flex flex-col">
+              <div className="rounded-full h-[30px] flex items-center justify-center w-[30px] bg-white">
+                <i className="devicon-nextjs-original-wordmark font-[600] colored"></i>
+              </div>
+              <h2 className="text-white">NextJS</h2>
+            </div>
+            <div className="flex flex-col">
+              <div className="rounded-full h-[30px] flex items-center justify-center w-[30px] bg-[white]">
+                <i className="devicon-solidity-plain colored"></i>
+              </div>
+              <h2 className="text-white">Solidity</h2>
+            </div>
+          </div>
+          <p className="text-gray-300 text-left">
+            Vote for your favorite Nigerian presidential candidates securely and
+            transparently on the blockchain with Nigerian Election. This
+            decentralized platform ensures the integrity and accuracy of the
+            voting process.
+          </p>
+          <Link href="https://nigerianelectionweb3.vercel.app">
+            <div className=" flex my-2 font-[600]  flex-row gap-2 items-center cursor-pointer justify-start w-[100px] p-2 rounded-lg border  text-[#01945a] border-[#01945a]">
               <AiFillEye className="text-[20px]" />
               Preview
             </div>
