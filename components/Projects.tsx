@@ -1,12 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-=======
-import { FaAward } from "react-icons/fa";
-import { AiFillEye } from "react-icons/ai";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import Projectcard from "./Projectcard";
->>>>>>> 7449382963a3719a78aea06b56cd65bd78c51b35
 import ProjectTemplate from "./ProjectTemplate";
 import {
   firebaseicon,
@@ -25,24 +17,7 @@ const Projects = (props: Props) => {
       <h3 className="uppercase tracking-[15px] text-gray-500 text-2xl">
         Projects
       </h3>
-<<<<<<< HEAD
       <div className="py-3 justify-items-center grid grid-cols-1 md:grid-cols-2 gap-5 w-full ">
-=======
-      <motion.div
-        initial={{
-          opacity: 0,
-          scale: 0.5,
-        }}
-        whileInView={{
-          opacity: 1,
-          scale: 1,
-        }}
-        transition={{
-          duration: 1.2,
-        }}
-        className="py-3 justify-items-center grid grid-cols-1 md:grid-cols-2 gap-5 w-full "
-      >
->>>>>>> 7449382963a3719a78aea06b56cd65bd78c51b35
         {/* xyz Academy */}
         <ProjectTemplate
           platform={"Web"}
@@ -192,11 +167,7 @@ const Projects = (props: Props) => {
           description={
             "Portfolio and blog website for digital content creation. Powered by Hygraph as a CMS. Built with the fast blazing technology of NextJS"
           }
-<<<<<<< HEAD
           projectlink={"https://debby.vercel.app"}
-=======
-          projectlink={"htps://debby.vercel.app"}
->>>>>>> 7449382963a3719a78aea06b56cd65bd78c51b35
           tools={[
             {
               icon: "devicon-nextjs-original-wordmark font-[600] colored",
@@ -204,7 +175,6 @@ const Projects = (props: Props) => {
             },
           ]}
         />
-<<<<<<< HEAD
         {/* oakfieldschools */}
         <ProjectTemplate
           platform={"Web"}
@@ -242,9 +212,6 @@ const Projects = (props: Props) => {
           ]}
         />
       </div>
-=======
-      </motion.div>
->>>>>>> 7449382963a3719a78aea06b56cd65bd78c51b35
     </div>
   );
 };
