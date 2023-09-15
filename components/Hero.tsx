@@ -16,7 +16,7 @@ const Hero = (props: Props) => {
   });
   return (
     <div className="w-full h-screen flex flex-col space-y-8 items-center justify-center text-center">
-      <div className="w-[200px] h-[200px] bg-white rounded-full bg-[url('/gp1.JPG')] bg-cover bg-center " />
+      <div className="w-[200px] h-[200px] bg-white rounded-full bg-[url('/geepy.jpeg')] bg-cover bg-center " />
       <div>
         <h2 className="uppercase text-sm text-gray-500 tracking-[15px] pb-2">
           Software Engineer
